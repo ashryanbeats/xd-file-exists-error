@@ -1,0 +1,24 @@
+{
+  "name": "File Exists Error",
+  "host": {
+    "app": "XD",
+    "minVersion": "13.0.0"
+  },
+  "description": "Sample plugin for Adobe XD, providing starter project scaffolding.",
+  "id": "FILE_EXISTS_ERROR",
+  "icons": [
+    {
+      "path": "images/icon.png",
+      "width": 96,
+      "height": 96
+    }
+  ],
+  "uiEntryPoints": [
+    {
+      "label": "File Exists Error",
+      "type": "menu",
+      "commandId": "myPluginCommand"
+    }
+  ],
+  "version": "1.0.0"
+}
