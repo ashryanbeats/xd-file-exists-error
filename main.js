@@ -2,7 +2,6 @@ const { localFileSystem, errors } = require("uxp").storage;
 
 async function createFile() {
   const folder = await localFileSystem.getFolder();
-  if (!folder) throw new Error("errorNoFolder");
 
   try {
     const file = await folder.createFile("test-file.txt", {
@@ -14,6 +13,7 @@ async function createFile() {
     console.log(err instanceof errors.EntryExistsError);
     console.log(err instanceof errors.FileIsReadOnlyError);
     console.log(err instanceof errors.PermissionDeniedError);
+    console.log;
   }
 }
 
